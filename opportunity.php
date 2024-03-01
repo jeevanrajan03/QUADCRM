@@ -12,7 +12,7 @@ if(!$user->loggedIn()) {
 }
 include('inc/header.php');
 ?>
-<title>webdamn.com : Demo Customer Relationship Management (CRM) System</title>
+<title>Quadrascent CRM System</title>
 <script src="js/jquery.dataTables.min.js"></script>
 <script src="js/dataTables.bootstrap.min.js"></script>		
 <link rel="stylesheet" href="css/dataTables.bootstrap.min.css" />
