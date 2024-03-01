@@ -63,14 +63,14 @@ include('inc/header.php');
 						</div>						
 					</div>	
 					
-					<p>
+					<!-- <p>
 					<h3>Sales Manager Login</h3>
 					<strong>Email: </strong>william@webdamn.com<br>
 					<strong>Password:</strong> 123
 					
 					<h3>Sales People Login</h3>
 					<strong>Email: </strong>smith@webdamn.com<br>
-					<strong>Password:</strong> 123<br>
+					<strong>Password:</strong> 123<br> -->
 									
 					
 				</form>   
