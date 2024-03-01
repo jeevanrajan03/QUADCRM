@@ -14,7 +14,7 @@ class Leads {
 		
 		$sqlWhere = '';
 		if($_SESSION["role"] == 'client') { 
-			$sqlWhere = " WHERE c.sales_rep = '".$_SESSION["userid"]."' and c.status = 'Lead'";
+			$sqlWhere = " WHERE c.sales_rep = '".$_SESSION["userid"]."' and c.status = 'Order'";
 		}	
 		
 		$sqlQuery = "SELECT c.id, c.contact_first, c.company, c.industry, c.budget, u.name, c.phone, c.website, c.status, c.initial_contact_date, c.email

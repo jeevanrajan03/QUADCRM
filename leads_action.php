@@ -20,7 +20,7 @@ if(!empty($_POST['action']) && $_POST['action'] == 'addLeads') {
 	$leads->lead_status = $_POST["lead_status"];
 	$leads->lead_email = $_POST["lead_email"];
 	$leads->lead_phone = $_POST["lead_phone"];
-	$leads->lead_website = $_POST["lead_website"];	
+	$leads->lead_website = $_POST["lead_tracking"];	
 	$leads->insert();
 }
 
@@ -39,7 +39,7 @@ if(!empty($_POST['action']) && $_POST['action'] == 'updateLeads') {
 	$leads->lead_status = $_POST["lead_status"];
 	$leads->lead_email = $_POST["lead_email"];
 	$leads->lead_phone = $_POST["lead_phone"];
-	$leads->lead_website = $_POST["lead_website"];
+	$leads->lead_website = $_POST["lead_tracking"];
 	$leads->update();
 }
 

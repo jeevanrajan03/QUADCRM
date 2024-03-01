@@ -46,7 +46,7 @@ class User {
 
 		$sqlWhere = '';
 		if($_SESSION["role"] == 'admin') { 
-			$sqlWhere = "WHERE roles = 'client' and status = 1";
+			$sqlWhere = "WHERE roles = 'sales' and status = 1";
 		}		
 		$sqlQuery = "SELECT * FROM ".$this->userTable." $sqlWhere";
 		

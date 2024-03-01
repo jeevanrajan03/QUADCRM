@@ -101,7 +101,7 @@ include('inc/header.php');
 						</div>	
 						
 						<div class="form-group">
-							<label for="address" class="control-label">Comapny</label>							
+							<label for="address" class="control-label">Company</label>							
 							<input type="text" class="form-control" id="lead_company" name="lead_company" placeholder="company" required>									
 						</div>
 
@@ -118,10 +118,9 @@ include('inc/header.php');
 						<div class="form-group">
 							<label for="country" class="control-label">Status</label>							
 							<select class="form-control" id="lead_status" name="lead_status"/>							
-								<option value="Lead">Lead</option>
-								<option value="Proposal">Proposal</option>
-								<option value="Customer / won">Customer / won</option>
-								<option value="Archive">Archive</option>							
+								<option value="Quote" selected>Quote</option>
+								<option value="Order">Order</option>
+															
 							</select>							
 						</div>
 						
@@ -137,7 +136,9 @@ include('inc/header.php');
 						
 						<div class="form-group">
 							<label for="address" class="control-label">Website</label>							
-							<input type="text" class="form-control" id="lead_website" name="lead_website" placeholder="Website" required>									
+							<select type="text" class="form-control" id="lead_website" name="lead_website" >
+							<option value="Not Ordered" selected>Not Ordered</option>
+							</select>									
 						</div>					
 					</div>
 					<div class="modal-footer">

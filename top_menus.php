@@ -4,7 +4,7 @@
 <ul class="nav nav-tabs">	
 	<?php if($_SESSION["role"] == 'admin') { ?>		
 		<li id="sales_people"><a href="sales_people.php">Sales Rep</a></li>
-		<li id="tasks"><a href="tasks.php">Orders</a></li> 
+		<li id="tasks"><a href="leads.php">Orders</a></li> 
 		<li id="contact"><a href="contact.php">Clients</a></li> 		
 	<?php } ?>
 	

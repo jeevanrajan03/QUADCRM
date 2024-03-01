@@ -28,8 +28,21 @@ if(!empty($_POST['action']) && $_POST['action'] == 'getLead') {
 	$opportunity->id = $_POST["id"];
 	$opportunity->getLead();
 }
-
 if(!empty($_POST['action']) && $_POST['action'] == 'updateOpportunity') {
+	if($_POST["lead_status"]=='Order'){
+	$opportunity->id = $_POST["id"];
+	$opportunity->lead_first = $_POST["lead_first"];
+    $opportunity->lead_last = $_POST["lead_last"];
+	$opportunity->lead_company = $_POST["lead_company"];
+	$opportunity->lead_industry = $_POST["lead_industry"];
+	$opportunity->lead_budget = $_POST["lead_budget"];
+	$opportunity->lead_status = $_POST["lead_status"];
+	$opportunity->lead_email = $_POST["lead_email"];
+	$opportunity->lead_phone = $_POST["lead_phone"];
+	$opportunity->lead_website = 'Waiting for Pick Up';
+	$opportunity->update();
+}
+else{
 	$opportunity->id = $_POST["id"];
 	$opportunity->lead_first = $_POST["lead_first"];
     $opportunity->lead_last = $_POST["lead_last"];
@@ -41,6 +54,7 @@ if(!empty($_POST['action']) && $_POST['action'] == 'updateOpportunity') {
 	$opportunity->lead_phone = $_POST["lead_phone"];
 	$opportunity->lead_website = $_POST["lead_website"];
 	$opportunity->update();
+}
 }
 
 if(!empty($_POST['action']) && $_POST['action'] == 'deleteLead') {
