@@ -95,10 +95,10 @@ include('inc/header.php');
 							<label for="address" class="control-label">Email</label>							
 							<input type="email" class="form-control" id="sales_email" name="sales_email" placeholder="email" required>									
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="address" class="control-label" id="newPassword">Password</label>							
 							<input type="password" class="form-control" id="sales_password" name="sales_password" placeholder="password" required>									
-						</div>
+						</div> -->
 						
 					</div>
 					<div class="modal-footer">

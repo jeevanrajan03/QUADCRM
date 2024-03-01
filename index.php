@@ -17,7 +17,7 @@ if(!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["password
 	$user->password = $_POST["password"];	
 	$user->loginType = $_POST["loginType"];
 	if($user->login()) {
-		header("Location: tasks.php");	
+		header("Location: leads.php");	
 	} else {
 		$loginMessage = 'Invalid login! Please try again.';
 	}
